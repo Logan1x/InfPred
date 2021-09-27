@@ -1,22 +1,31 @@
 import React from "react";
+import Heroimg from "../images/heroimg.png";
 
 export default function homepage() {
   return (
     <div>
-      <div className="lg:w-3/5 mx-auto h-page flex flex-col justify-center items-center px-3">
-        <h1 className="font-bold text-2xl lg:text-5xl text-indigo-600">
+      <div className="lg:w-4/5 mx-auto lg:h-page flex flex-col justify-center items-center px-3">
+        <h1 className="font-bold text-2xl pt-4 lg:text-5xl text-indigo-600">
           Welcome to
-          <span className="border-b-4 border-blue-500 px-2 py-1 hover:bg-transparent">
+          <span className="border-b-4 border-blue-500 px-2 hover:bg-transparent">
             InfPred
           </span>
         </h1>
-        <p className="text-xl text-center my-4 ">
-          lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Facere porro consequuntur
-          maxime aspernatur ab ad repellendus exercitationem! Fugit
-          exercitationem vero, ullam sunt minima assumenda doloribus,
-          voluptatibus pariatur, autem nam molestiae!
-        </p>
+        <div className=" flex flex-wrap lg:flex-nowrap items-center justify-center lg:space-x-4">
+          <img src={Heroimg} alt="hero image" />
+          <p className="text-xl text-justify px-2 my-4 ">
+            InfPred is a machine learning based tool to predict the zoonotic
+            host tropism of the Influenza A virus with the help of its protein
+            sequences, stating whether a viral strain has the potential to
+            infect human hosts. This was developed to help prioritize high-risk
+            viral strains for future research, aid the study of emergence or the
+            risk a novel influenza virus possesses if it acquires the capability
+            to spread human to human, thereby being useful for pandemic
+            preparedness, disease surveillance if integrated with early warning
+            systems, capacity-building activities, and determining the overall
+            public-health impact.
+          </p>
+        </div>
       </div>
       {/* colored div */}
       <div className="w-screen lg:h-page bg-gray-300 p-2 md:p-10">
@@ -24,21 +33,25 @@ export default function homepage() {
           <h1 className="font-bold text-2xl lg:text-5xl text-indigo-600 my-10">
             About
             <span className="border-b-4 border-blue-500 px-2 py-1 hover:bg-transparent">
-              Influenza Virus
+              the website
             </span>
           </h1>
-          <div className="flex flex-wrap lg:flex-nowrap lg:space-x-6">
-            <p className="text-xl  my-4 bg-white px-14 py-8 shadow rounded text-center lg:text-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-              obcaecati odit. Eveniet, unde possimus nobis non debitis illum
-              beatae voluptate atque perspiciatis enim facere ipsum dolorem amet
-              adipisci, maxime doloremque?
+          <div className="text-xl  my-4 bg-white px-14 py-8 shadow rounded text-center lg:text-justify">
+            <p>
+              Infectious diseases have shaped human civilization throughout
+              history causing massive economic fallout, affecting urban
+              activity, livelihood, and mortality. These diseases have had the
+              potential to cause biological disasters like epidemics, pandemics
+              and one of the leading causes for this is Zoonosis.
             </p>
-            <p className="text-xl  my-4 bg-white px-14 py-8 shadow rounded text-center lg:text-right">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-              obcaecati odit. Eveniet, unde possimus nobis non debitis illum
-              beatae voluptate atque perspiciatis enim facere ipsum dolorem amet
-              adipisci, maxime doloremque?
+            <p>
+              The viruses can affect various hosts by jumping species, called
+              reservoirs, and causing disease outbreaks. Some of them, can even
+              affect humans and cause epidemics or pandemics as the strains may
+              have the potential to overcome species barriers and infect humans,
+              get adapted in such a way that it could spread human-to-human,
+              leading to a potential pandemic, which is a cause of great
+              concern.
             </p>
           </div>
         </div>
