@@ -12,7 +12,7 @@ export default function homepage() {
           </span>
         </h1>
         <div className=" flex flex-wrap lg:flex-nowrap items-center justify-center lg:space-x-4">
-          <img src={Heroimg} alt="hero image" />
+          <img src={Heroimg} alt="influenza illustration" />
           <p className="text-xl text-justify px-2 my-4 ">
             InfPred is a machine learning based tool to predict the zoonotic
             host tropism of the Influenza A virus with the help of its protein
