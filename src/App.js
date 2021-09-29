@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  // TODO : make responsive for 1280px
   return (
     <div className="bg-purple-50">
       <Router>
